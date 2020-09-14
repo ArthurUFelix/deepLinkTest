@@ -6,12 +6,12 @@
     <title>Deep Linking</title>
 </head>
 <body>
-    <a href="atendimentosebraesc://profile">Link to open the app</a>
+    <a href="atendimentosebraesc://profile?param1=conteudo1&param2=conteudo2">Link to open the app</a>
     <button id="btn" onclick="openApp()">Button with window.open</button>
 
     <script>
         const openApp = () => {
-            window.open("atendimentosebraesc://profile")
+            window.open("atendimentosebraesc://profile?param1=conteudo1&param2=conteudo2")
         }
     </script>
 </body>
